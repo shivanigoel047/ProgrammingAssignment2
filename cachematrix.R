@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Cache Inverse of matrix
 
-## Write a short comment describing this function
+## set the matrix,  <<- operator which is used to assign a value to an object in an environment that is
+## different from the current environment
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- Null
@@ -16,7 +16,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Calculates the inverse of matrix, t first checks to see if the inverse has already been calculated.
+## If so, it gets the inverse from the cache and skips the computation. 
+## Otherwise, it calculates the inverse of the data and sets the value of the inverse in the cache via the setInverse function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
